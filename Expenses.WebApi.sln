@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.WebApi", "Expenses.WebApi\Expenses.WebApi.csproj", "{693C9D70-BCEA-4760-881C-E1ED3E3CE6A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.DB", "Expenses.DB\Expenses.DB.csproj", "{4DEB5417-F50D-4D82-BE87-1D0F41D56723}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.DB", "Expenses.DB\Expenses.DB.csproj", "{4DEB5417-F50D-4D82-BE87-1D0F41D56723}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expenses.Core", "Expenses.Core\Expenses.Core.csproj", "{3B2AB894-F20C-4C6B-86BD-CAD94F69F509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Expenses.Core", "Expenses.Core\Expenses.Core.csproj", "{3B2AB894-F20C-4C6B-86BD-CAD94F69F509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

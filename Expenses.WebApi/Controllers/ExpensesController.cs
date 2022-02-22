@@ -1,10 +1,12 @@
 ﻿ 
 using Expenses.Core;
-using Expenses.DB;
+using Expenses.Core.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
  
 namespace Expenses.WebApi.Controllers
-{
+{  
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class ExpensesController : ControllerBase
@@ -30,7 +32,7 @@ namespace Expenses.WebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateExpense(Expense expense)
+        public IActionResult CreateExpense(DB.Expense expense)
         {
             var newExpense = _expensesServices.CreateExpense(expense);
             return CreatedAtRoute("GetExpense",  new {newExpense.ID}, newExpense);
